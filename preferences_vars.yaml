@@ -4,10 +4,7 @@
     wishes: "wishes from variables"
   vars_files:
   - vars.yaml
-  vars_prompt:
-  - name: wishes
-    prompt: please enter wishes
-    private: false
+
   tasks: 
   - name: variables from differnet places
     ansible.builtin.debug:
@@ -17,3 +14,4 @@
 #1.arguments at cmd level
 #2.task level
 #3.variables from files
+#4. variables from prompt
