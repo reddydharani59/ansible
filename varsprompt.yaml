@@ -1,6 +1,6 @@
 - name: variables from prompt
   hosts: localhost
-  var_prompt:
+  vars_prompt:
   - name: USERNAME
     prompt: "please enter username"
     private: flase
