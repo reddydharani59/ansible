@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     wishes: "wishes from variables"
-  vars_file:
+  vars_files:
   - vars.yaml
   vars_prompt:
   - name: wishes
