@@ -10,9 +10,9 @@
     private: false
   tasks: 
   - name: variables from differnet places
-    vars:
-      wishes: "wishes from task section"
     ansible.builtin.debug:
       msg: "hello,{{wishes}}"
 
 
+#1.arguments at cmd level
+#2.task level
