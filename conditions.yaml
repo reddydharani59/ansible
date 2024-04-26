@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: check user exists or not
-    ansible.builtin.debug: id expense
+    ansible.builtin.command: id expense
     ignore_errors: true
   - name: say hello
     ansible.builtin.debug:
