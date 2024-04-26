@@ -1,7 +1,7 @@
 - name: prefernces of variables
   hosts: localhost
-  vars:
-    wishes: "wishes from variables"
+  #vars:
+   # wishes: "wishes from variables"
   vars_files:
   - vars.yaml
 
@@ -15,3 +15,4 @@
 #2.task level
 #3.variables from files
 #4. variables from prompt
+#5. variables from play
