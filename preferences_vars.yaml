@@ -11,7 +11,7 @@
   tasks: 
   - name: variables from differnet places
     vars:
-      wishes" "wishes from task section"
+      wishes: "wishes from task section"
     ansible.builtin.debug:
       msg: "hello,{{wishes}}"
 
