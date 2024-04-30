@@ -14,7 +14,7 @@
     when: user.rc != 0
   - name: printing the information
     ansible.builtin.debug:
-      msg:" hello user added"
+      msg: "hello user added"
 
   
   
