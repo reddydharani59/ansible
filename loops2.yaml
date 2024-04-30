@@ -9,6 +9,6 @@
     loop:
     - { 'name' : 'mysql' , 'state' : 'present' }
     - { 'name' : 'nginx' , 'state' : 'absent' } 
-    - { 'name' : 'postfix' , 'state' : 'abesnt'}
+    - { 'name' : 'postfix' , 'state' : 'absent'}
     
 
