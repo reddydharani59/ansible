@@ -4,13 +4,6 @@
   tasks:
   - name: pritning the information
     vars:
-     details:
-      devops: 3
-      linux: 4
-      terraform: 5
-    ansible.builtin.debug:
-       msg: "{{details}}"
-    vars:
       items:
       - shell script
       - anisible
@@ -18,3 +11,10 @@
       - super putty
     ansible.builtin.debug:
       msg: "{{items}}"
+    vars:
+     details:
+      devops: 3
+      linux: 4
+      terraform: 5
+    ansible.builtin.debug:
+       msg: "{{details}}"
