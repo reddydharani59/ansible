@@ -40,9 +40,9 @@
   - name: convert item to dict
     vars:
       memory:
-      - 8gb
-      - 10gb
-      - 64gb
+      - { 'key' : 'linux' , 'value' : '8gb' }
+      - { 'key' : 'devops', 'value' : '10gb'}
+      - { 'key' : 'terraform', 'value' : '12gb'}
     ansible.builtin.debug:
       msg: " convert into dictionary {{ memory | items2dict }}" 
 
