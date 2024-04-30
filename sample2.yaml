@@ -1,0 +1,6 @@
+- name: print th user information
+  hosts: localhost
+  tasks:
+  - name: adding user
+    anisible.builtin.command: id expense
+    
