@@ -37,5 +37,13 @@
        terraform: 8
     ansible.builtin.debug:
        msg: "after converting{{ experience | dict2items }}"
+  - name: convert item to dict
+    vars:
+      memory:
+      - 8gb
+      - 10gb
+      - 64gb
+    ansible.builtin.debug:
+      msg: " convert into dictionary {{ memory | items2dict }}" 
 
    
