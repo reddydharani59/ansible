@@ -1,0 +1,12 @@
+- name: installing packages
+  hosts: db
+  tasks:
+  - name: installing in remote server
+    ansible.builtin.dnf:
+     name: "{{ item }}"
+     state: latest
+    loop:
+    - mysql-server
+    - nginx
+    - postfix
+
