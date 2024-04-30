@@ -16,3 +16,20 @@
       number: [1,3,4,5,6,7,6,1,1,4,4,44]
     ansible.builtin.debug: 
       msg: "remove duplicates  {{ number | unique }}"
+  - name : minimum age
+    vars:
+      ages: [30,45,65,35,]
+    ansible.builtin.debug:
+      msg: "minimum age is {{ ages | min }}"
+  - name: convert maps to list
+    vars: 
+      experience:
+       devops: 3
+       linux: 4
+       terraform: 8
+    ansible.builtin.debug:
+      msg: "before convert {{experience}}"
+    ansible.builtin.debug:
+      msg: "after converting{{ experience | dict2items }}"
+
+   
