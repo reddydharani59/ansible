@@ -49,7 +49,7 @@
     ansible.builtin.debug:
       msg: "before converting{{memory}}"
   - name: after converting
-    ansible.builstin.debug:
+    ansible.builtin.debug:
       msg: " convert into dictionary {{ memory | items2dict }}" 
 
    
