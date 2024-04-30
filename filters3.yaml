@@ -5,9 +5,9 @@
     vars:
     greeting: "hi hello"
     ansible.builtin.debug:
-      msg: " in uppercase {{greeting | upper }}"
+      msg: " in uppercase {{ greeting | upper }}"
   - name: printing in lowercase
     vars: 
     greeting: " HI HELLO"
     ansible.builtin.debug:
-      msg: "in lowercase {{greeting | lower }}"
+      msg: "in lowercase {{ greeting | lower }}"
