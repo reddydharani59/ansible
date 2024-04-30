@@ -30,6 +30,11 @@
     ansible.builtin.debug:
       msg: "before convert {{experience}}"
   - name: after converting
+    vars: 
+      experience:
+       devops: 3
+       linux: 4
+       terraform: 8
     ansible.builtin.debug:
        msg: "after converting{{ experience | dict2items }}"
 
