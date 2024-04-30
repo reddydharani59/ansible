@@ -8,5 +8,12 @@
   - name: print the information
     ansible.builtin.debug:
       msg: "{{user}}"
+  - name: adding user
+    ansible.builtin.command: useradd expense
+    register: user
+  - name: printing the information
+    ansible.builtin.debug:
+      msg:{{user}}
+
   
   
