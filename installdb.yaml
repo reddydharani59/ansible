@@ -22,7 +22,7 @@
   - name: installing mysql python dependencies
     ansible.builtin.debug:
       name:
-      - pymysql
+      - Pymysql
       - cryptography
       executable: pip3.9
 
