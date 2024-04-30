@@ -15,4 +15,4 @@
       linux: 4
       terraform: 5
     ansible.builtin.debug:
-       msg: "{{details}} and {{items}}"
+       msg: "{{details}}"
