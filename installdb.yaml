@@ -23,6 +23,6 @@
     register: mysql_output
   - name: print the information
     ansible.builtin.debug:
-     msg: "output : {{ mysqloutput }}"
+     msg: "output : {{ mysql_output }}"
 
 
