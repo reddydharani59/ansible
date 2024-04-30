@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
   - name: adding user
-    anisible.builtin.command: id expense
+    ansible.builtin.command: id expense
     register: user
     ignore_errors: true
     ansible.builtin.debug:
