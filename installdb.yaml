@@ -4,8 +4,8 @@
   vars:
    loginhosts: db.daws-78s.site
   vars_prompt:
-  - name: entering password
-    prompt: please enter password
+  - name: mysql_root_password
+    prompt: please enter user name
     private: false
   tasks:
   - name: installing mysql-server
