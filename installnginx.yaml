@@ -3,7 +3,7 @@
   tasks: 
   - name: install
     ansible.builtin.dnf:
-    - name: nginx
+      name: nginx
       state: present
   - name: printing the information
     ansible.builtin.debug:
