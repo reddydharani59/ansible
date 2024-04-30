@@ -5,8 +5,8 @@
    loginhosts: db.daws-78s.site
   vars_prompt:
   - name: entering password
-  prompt: please enter password
-  private: true
+    prompt: please enter password
+    private: true
   tasks:
   - name: installing mysql-server
     ansible.builtin.dnf:
