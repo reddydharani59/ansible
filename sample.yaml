@@ -1,0 +1,15 @@
+-name: practicing ansible
+ hosts: localhost
+ tasks:
+ - name: creating maps
+   details:
+   devops: 3
+   linux: 4
+   terraform: 5
+   ansible.builtin.debug:
+   msg_print: "{{details}}"
+   items:
+   - shell script
+   - anisible
+   - putty
+   - super putty
