@@ -2,9 +2,9 @@
   hosts: localhost
   vars:
     details:
-      devops: 3
-      linux: 4
-      terraform: 5
+     devops: 3
+     linux: 4
+     terraform: 5
   tasks:
   - name: pritning the information
     ansible.builtin.debug:
