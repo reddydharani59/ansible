@@ -7,9 +7,11 @@
       linux: 4
       terraform: 5
     ansible.builtin.debug:
-    msg_print: "{{details}}"
+     msg_print: "{{details}}"
     items:
     - shell script
     - anisible
     - putty
     - super putty
+    ansible.builtin.debug:
+     msg: "{{items}}"
