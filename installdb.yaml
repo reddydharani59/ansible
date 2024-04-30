@@ -2,7 +2,7 @@
   hosts: db
   become: yes
   vars:
-   loginhosts: db
+   loginhosts: db.daws-78s.site
   vars_prompt:
   - name: mysql_root_password
     prompt: please enter user name
