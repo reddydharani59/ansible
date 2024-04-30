@@ -1,8 +1,28 @@
 - name: installing db
   hosts: db
   become: yes
+  vars:
+   loginhosts: db.daws-78s.site
   tasks:
   - name: installing mysql-server
     ansible.builtin.dnf:
      name: mysql-server
-     state: present
+     state: latest
+  - name: starting mysql
+    ansible.builtin.service:
+     name: mysqld
+     state: started
+     enabled: yes
+  - name: setting the password
+    community.mysql.mysql_info:
+     login_user: root
+     login_password: ExpenseApp@1
+     login_host: "{{ loginhosts }}"
+     filter: version
+    ignore_eroors: yes
+    register: mysql_output
+  - name: print the information
+    ansible.builtin.debug:
+     msg: "output : {{ mysqloutput }}"
+
+
