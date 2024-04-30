@@ -5,15 +5,15 @@
       devops: 3
       linux: 4
       terraform: 5
-    tasks:
-    - name: pritning the information
-      ansible.builtin.debug:
-        msg: "{{details}}"
-      vars:
-        items:
-        - shell script
-        - anisible
-        - putty
-        - super putty
-      ansible.builtin.debug:
-        msg: "{{items}}"
+  tasks:
+  - name: pritning the information
+    ansible.builtin.debug:
+       msg: "{{details}}"
+    vars:
+      items:
+      - shell script
+      - anisible
+      - putty
+      - super putty
+    ansible.builtin.debug:
+      msg: "{{items}}"
