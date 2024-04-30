@@ -1,0 +1,6 @@
+- name: defult value
+  hosts: localhost
+  tasks:
+  - name: printing defualt value
+    ansible.builtin.debug:
+      msg: " value of {{course}}"
