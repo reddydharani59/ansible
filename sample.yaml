@@ -8,7 +8,7 @@
     tasks:
     - name: pritning the information
       ansible.builtin.debug:
-        msg_print: "{{details}}"
+        msg: "{{details}}"
       vars:
         items:
         - shell script
