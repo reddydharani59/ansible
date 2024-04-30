@@ -3,5 +3,8 @@
   tasks:
   - name: adding user
     anisible.builtin.command: id expense
-    ignore_errors: true
+     register: user
+     ignore_errors: true
+    ansible.builtin.debug:
+      msg: "{{user}}"
   
