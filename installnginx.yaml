@@ -9,3 +9,8 @@
   - name: printing the information
     ansible.builtin.debug:
       msg: "installed nginx" 
+  - name: enabling nginx
+    ansible.builtin.service:
+      name:nginx
+      enabled: yes 
+     
