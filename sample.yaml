@@ -1,12 +1,13 @@
 - name: practicing ansible
   hosts: localhost
-  vars:
-    details:
-     devops: 3
-     linux: 4
-     terraform: 5
+  
   tasks:
   - name: pritning the information
+    vars:
+     details:
+      devops: 3
+      linux: 4
+      terraform: 5
     ansible.builtin.debug:
        msg: "{{details}}"
     vars:
