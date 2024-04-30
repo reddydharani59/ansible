@@ -11,6 +11,7 @@
   - name: adding user
     ansible.builtin.command: useradd expense
     register: user
+    when: user rc != 0
   - name: printing the information
     ansible.builtin.debug:
       msg:{{user}}
