@@ -1,10 +1,10 @@
-- name: print th user information
+- name: print the user information
   hosts: localhost
   tasks:
   - name: adding user
     anisible.builtin.command: id expense
-     register: user
-     ignore_errors: true
+      register: user
+      ignore_errors: true
     ansible.builtin.debug:
       msg: "{{user}}"
   
