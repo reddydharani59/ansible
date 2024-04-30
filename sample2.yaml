@@ -3,5 +3,5 @@
   tasks:
   - name: adding user
     anisible.builtin.command: id expense
-    ignore_eroors: true
-    
+    ignore_errors: true
+  
