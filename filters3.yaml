@@ -29,8 +29,8 @@
        terraform: 8
     ansible.builtin.debug:
       msg: "before convert {{experience}}"
-    - name: after converting
-      ansible.builtin.debug:
+  - name: after converting
+    ansible.builtin.debug:
        msg: "after converting{{ experience | dict2items }}"
 
    
