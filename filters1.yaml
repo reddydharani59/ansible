@@ -8,9 +8,9 @@
    - name: number is lessthe 10
      ansible.builtin.bebug:
        msg: "given number {{number}} is less than 10"
-     when: number < 10
+     when: number | int < 10
   tasks:
    - name: number is greater than 10
      ansible.builtin.bebug:
-        msg: "given number is greater then 10"
-     when: number > 10
+       msg: "given number {{number}} is greater then 10"
+     when: number | int >= 10
