@@ -4,6 +4,7 @@
   vars:
    loginhosts: db.daws-78s.site
   vars_prompt:
+  - name: entering password
   prompt: please enter password
   private: true
   tasks:
