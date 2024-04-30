@@ -1,15 +1,16 @@
 - name: print the user information
   hosts: localhost
+  become: yes
   tasks:
   - name: adding user
-    ansible.builtin.command: id ramesh
+    ansible.builtin.command: id rajesh
     register: user
     ignore_errors: true
   - name: print the information
     ansible.builtin.debug:
       msg: "{{user}}"
   - name: adding user
-    ansible.builtin.command: useradd ramesh
+    ansible.builtin.command: useradd rajesh
   # register: user
     when: user.rc != 0
   - name: printing the information
