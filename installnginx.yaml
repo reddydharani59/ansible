@@ -11,6 +11,6 @@
       msg: "installed nginx" 
   - name: enabling nginx
     ansible.builtin.service:
-      name:nginx
+      name: nginx
       enabled: yes 
      
